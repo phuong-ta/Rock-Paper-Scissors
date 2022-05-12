@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rock paper scissors</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <section class="game">
+        <div class="clickToPlay" id="playButton">
+            <h1> Play 7 times with computer. You will win, if you get win more than computer, or win 3 time continuosly</h1>
+            <button onclick="playGame()"> Play</button>
+        </div>
+
+        <div class="playAgain" id="playAgain">
+            <h1> Result</h1>
+            <h3 id="result"></h3>
+            <button onclick="playAgain()"> Play Again</button>
+        </div>
+        <div id="game" >
+            <div class="result">
+                <div class="player">
+                    <h2> Player:</h2>
+                     <p id="player-result">0 </p>
+                </div>
+                <div class="computer">
+                    <h2> Computer:</h2>
+                    <p id="computer-result">0 </p>
+                </div>
+            </div>
+    
+            <div class="intro">
+                <h1>Rock paper scissors </h1>
+                <button> Let's play</button>
+            </div>
+    
+            <div class="match">
+                <h2 class="winner"> Choose an option</h2>
+                <div class="hands" id="hands">
+                    <img id="player-hand" class="player-hand" src="rock.png" alt="rock">
+                    <img id="computer-hand" class="computer-hand" src="rock.png" alt="rock">
+                </div>
+                <div class="options" id="options">
+                    <button class="activate" id="rock" onClick="getId(this.id)">Rock</button>
+                    <button class="activate" id="paper" onClick="getId(this.id)">Paper</button>
+                    <button class="activate" id="scissors" onClick="getId(this.id)">Scissors</button>
+                </div>
+                
+            </div>
+        </div>       
+    </section>
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+.player-hand{
+    transform: rotateY(180deg);
+
+}
+  
+  .hands.active {
+    animation-duration: 0.5s;
+    animation-name: slidein;
+    animation-iteration-count: 5;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-top: 0%;
+      width: auto;
+    }
+  
+    to {
+      margin-top: 5%;
+      width: auto;
+    }
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+    background-color: #DDAF94;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.result{
+    color:#FDF8F5;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.result h2{
+    font-size: 30px;
+}
+.result p{
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+.intro{
+    color: #FDF8F5;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0;
+}
+
+.intro h1{
+    font-size: 50px;
+}
+
+.intro button,
+.match button{
+    width: 150px;
+    height: 50px;
+    background-color: none;
+    border: none;
+    color:#FDF8F5;
+    font-size: 20px;
+    background-color:#266150;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clickToPlay button{
+    width: 150px;
+    height: 50px;
+    background-color: none;
+    border: none;
+    color:#FDF8F5;
+    font-size: 20px;
+    background-color:#266150;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.match{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.winner{
+    color: #FDF8F5;
+    text-align: center;
+    font-size: 50px;
+}
+
+.hands{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.options{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.options button{
+    margin-left: 30px;
+}
+
+.clickToPlay{
+    align-items: center;
+    justify-content: space-around;
+    color:#FDF8F5;
+    padding-top: 100px;
+    text-align: center;
+}
+.clickToPlay h1{
+    margin-bottom: 15px;
+}
+
+.playAgain {
+    display: none;
+}
+
+.playAgain button{
+    width: 150px;
+    height: 50px;
+    background-color: none;
+    border: none;
+    color:#FDF8F5;
+    font-size: 20px;
+    background-color:#266150;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.playAgain{
+    align-items: center;
+    justify-content: space-around;
+    color:#FDF8F5;
+    padding-top: 100px;
+    text-align: center; 
+}
+.playAgain h1{
+    padding-bottom: 15px;
+}
+.playAgain h3{
+    padding-bottom: 15px;
+}
+#game{
+    display: none;
+}
+
+  
